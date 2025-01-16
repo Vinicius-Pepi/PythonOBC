@@ -12,7 +12,7 @@ for game in gameList:
     
 #3- Quando a condição for atendida, o loop vai para a próxima iteração
 for game in gameList:
-    if game == "Red Dead 2"
+    if game == "Red Dead 2":
         continue
     print(game)    
 
