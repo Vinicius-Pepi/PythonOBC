@@ -57,7 +57,10 @@ def cadPlayer():
     teamName = input("Digite o nome do time que deseja adicionar o jogador: ")
     if teamName in teams:
         playerName = input("Digite o nome do jogador: ")
-        teams[teamName].append(playerName)
+        if playerName in teams[teamName]:
+            print(f"O jogador {playerName} já está cadastrado no time {teamName}")
+        else:
+            teams[teamName].append(playerName)
     else:
         print(f"O time {teamName} não está cadastrado.")
         
